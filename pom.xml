@@ -54,6 +54,11 @@
                         </configuration>
                     </execution>
                 </executions>
+                <configuration>
+                    <excludes>
+                        <exclude>**/Main.java</exclude>
+                    </excludes>
+                </configuration>
             </plugin>
         </plugins>
     </build>
