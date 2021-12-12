@@ -49,18 +49,24 @@ public class CellTest {
     }
     @Test
     public void testPaintBomb() {
-        assert true;
-    }
+        var mockedGame = mock(GameMines.class);
+        var cell = new Cell(mockedGame);
+        var g = mock(Graphics.class);
+        cell.paintBomb(g, 0, 0, Color.white);
+        assert true;    }
     @Test
     public void testPaintString() {
-        assert true;
-    }
+        var mockedGame = mock(GameMines.class);
+        var cell = new Cell(mockedGame);
+        var g = mock(Graphics.class);
+        cell.paintString(g, "hello",0, 0, Color.white);
+        assert true;    }
     @Test
     public void testPaint() {
         var mockedGame = mock(GameMines.class);
         var cell = new Cell(mockedGame);
         var g = mock(Graphics.class);
-        doNothing().when(g).drawRect(anyInt(),anyInt(),anyInt(),anyInt());
+//        doNothing().when(g).drawRect(anyInt(),anyInt(),anyInt(),anyInt());
         cell.paint(g, 0, 0);
         assert true;
     }
