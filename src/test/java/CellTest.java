@@ -1,4 +1,5 @@
 import org.junit.Test;
+import static org.junit.Assert.assertEquals;
 
 public class CellTest {
     @Test
@@ -13,8 +14,11 @@ public class CellTest {
     }
     @Test
     public void testSetCountBomb() {
-        var Cell = new Cell(null);
-        assert true;
+        var cell = new Cell(null);
+        var count = 5;
+        cell.setCountBomb(count);
+
+        assertEquals(count,cell.getCountBomb());
     }
     @Test
     public void testGetCountBomb() {
