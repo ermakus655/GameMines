@@ -1,5 +1,6 @@
 import junit.framework.TestCase;
 import org.junit.Test;
+import static org.mockito.Mockito.*;
 
 public class GameMinesTest extends TestCase {
 
@@ -8,8 +9,9 @@ public class GameMinesTest extends TestCase {
 
     @Test
     public void testInitField() {
-        var game = new GameMines();
-        game.initField();
+        var mockedGame = mock(GameMines.class);
+        doNothing().when(mockedGame).initUI();
+        mockedGame.initField();
         assert true;
     }
 }

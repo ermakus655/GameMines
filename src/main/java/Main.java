@@ -34,6 +34,11 @@ class GameMines extends JFrame {
     }
 
     GameMines() {
+        initUI();
+        initField();
+    }
+
+    void initUI () {
         setTitle(TITLE_OF_PROGRAM);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setBounds(START_LOCATION_X, START_LOCATION_Y, FIELD_SIZE * BLOCK_SIZE + FIELD_DX, FIELD_SIZE * BLOCK_SIZE + FIELD_DY);
@@ -67,7 +72,6 @@ class GameMines extends JFrame {
         add(BorderLayout.CENTER, canvas);
         add(BorderLayout.SOUTH, timeLabel);
         setVisible(true);
-        initField();
     }
 
     void openCells(int x, int y) {
