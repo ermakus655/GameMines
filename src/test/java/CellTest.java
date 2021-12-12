@@ -1,9 +1,16 @@
 import org.junit.Test;
+
+import java.awt.*;
+
 import static org.junit.Assert.assertEquals;
+import static org.mockito.Mockito.doNothing;
+import static org.mockito.Mockito.*;
 
 public class CellTest {
     @Test
     public void testOpen() {
+        var mockedGame = mock(GameMines.class);
+        var cell = new Cell(mockedGame);
         assert true;
     }
     @Test
@@ -50,6 +57,11 @@ public class CellTest {
     }
     @Test
     public void testPaint() {
+        var mockedGame = mock(GameMines.class);
+        var cell = new Cell(mockedGame);
+        var g = mock(Graphics.class);
+        doNothing().when(g).drawRect(anyInt(),anyInt(),anyInt(),anyInt());
+        cell.paint(g, 0, 0);
         assert true;
     }
 
