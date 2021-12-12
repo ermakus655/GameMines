@@ -68,4 +68,5 @@ class Cell {
         else if (countBombNear > 0)
             paintString(g, Integer.toString(countBombNear), x, y, new Color(gameMines.COLOR_OF_NUMBERS[countBombNear - 1]));
     }
+
 }

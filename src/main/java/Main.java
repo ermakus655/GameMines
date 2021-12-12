@@ -132,6 +132,7 @@ class GameMines extends JFrame {
         void stopTimer() { timer.cancel(); }
     }
 
+
     class Canvas extends JPanel {
         @Override
         public void paint(Graphics g) {
@@ -140,4 +141,5 @@ class GameMines extends JFrame {
                 for (int y = 0; y < FIELD_SIZE; y++) field[y][x].paint(g, x, y);
         }
     }
+
 }

@@ -13,8 +13,11 @@ public class CellTest {
 
     public void testGetCountBomb() {
     }
-
+    @Test
     public void testIsNotOpen() {
+        var Cell = new Cell(null);
+        Cell.isNotOpen();
+        assert Cell.isNotOpen();
     }
 
     @Test
@@ -35,4 +38,5 @@ public class CellTest {
 
     public void testPaint() {
     }
+
 }
