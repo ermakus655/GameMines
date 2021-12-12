@@ -22,8 +22,6 @@ public class CellTest {
     }
     @Test
     public void testGetCountBomb() {
-        var cell = new GameMines();
-        assert true;
     }
     @Test
     public void testIsNotOpen() {
