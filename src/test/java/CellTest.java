@@ -22,14 +22,14 @@ public class CellTest {
     }
     @Test
     public void testGetCountBomb() {
-        var cell = new Cell(null);
+        var cell = new GameMines();
         assert true;
     }
     @Test
     public void testIsNotOpen() {
-        var Cell = new Cell(null);
-        Cell.isNotOpen();
-        assert Cell.isNotOpen();
+        var cell = new Cell(null);
+        cell.isNotOpen();
+        assert cell.isNotOpen();
     }
 
     @Test
@@ -44,7 +44,6 @@ public class CellTest {
     }
     @Test
     public void testPaintBomb() {
-
         assert true;
     }
     @Test
