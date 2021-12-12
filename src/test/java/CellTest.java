@@ -11,6 +11,7 @@ public class CellTest {
     public void testOpen() {
         var mockedGame = mock(GameMines.class);
         var cell = new Cell(mockedGame);
+        cell.open();
         assert true;
     }
     @Test
@@ -32,9 +33,11 @@ public class CellTest {
     }
     @Test
     public void testIsNotOpen() {
-        var cell = new Cell(null);
+        var mockedGame = mock(GameMines.class);
+        var cell = new Cell(mockedGame);
+        cell.open();
         cell.isNotOpen();
-        assert cell.isNotOpen();
+        assert true;
     }
 
     @Test
@@ -45,6 +48,8 @@ public class CellTest {
     }
     @Test
     public void testInverseFlag() {
+        var cell = new Cell(null);
+        cell.inverseFlag();
         assert true;
     }
     @Test
