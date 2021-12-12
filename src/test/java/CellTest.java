@@ -3,7 +3,6 @@ import org.junit.Test;
 public class CellTest {
     @Test
     public void testOpen() {
-        var cell = new Cell(null);
         assert true;
     }
     @Test
@@ -14,7 +13,7 @@ public class CellTest {
     }
     @Test
     public void testSetCountBomb() {
-        var cell = new Cell(null);
+        var Cell = new Cell(null);
         assert true;
     }
     @Test
@@ -37,22 +36,19 @@ public class CellTest {
     }
     @Test
     public void testInverseFlag() {
-        var cell = new Cell(null);
         assert true;
     }
     @Test
     public void testPaintBomb() {
-        var cell = new Cell(null);
+
         assert true;
     }
     @Test
     public void testPaintString() {
-        var cell = new Cell(null);
         assert true;
     }
     @Test
     public void testPaint() {
-        var cell = new Cell(null);
         assert true;
     }
 
