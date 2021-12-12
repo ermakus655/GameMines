@@ -19,7 +19,7 @@ public class CellTest {
 
     @Test
     public void testIsMined() {
-        var cell = new Cell(new GameMines());
+        var cell = new Cell(null);
         cell.mine();
         assert cell.isMined();
     }
