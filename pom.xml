@@ -8,6 +8,10 @@
     <artifactId>GameMines</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <build>
+        <sourceDirectory>src/main/java</sourceDirectory>
+        <testSourceDirectory>src/main/java/</testSourceDirectory>
+    </build>
 
     <properties>
         <sonar.organization>ermakus655-1</sonar.organization>
